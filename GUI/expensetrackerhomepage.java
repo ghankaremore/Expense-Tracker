@@ -1,6 +1,5 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * This is the main GUI file for the expense tracker application. It contains the main window and all the functionality for the application.
  */
 package GUI;
 import java.sql.*;
