@@ -1,0 +1,1 @@
+import boto3\nfrom glue import SparkContext\n\n# Load the script\nscript = read_file('dbconnect.py')\n\n# Create a SparkContext\nsc = SparkContext(appName='DBConnect')\n\n# Execute the script\nsc.addPyFile('dbconnect.py')\nsc.parallelize([1, 2, 3]).map(lambda x: x * 2).collect()\n\n# Stop the SparkContext\nsc.stop()
